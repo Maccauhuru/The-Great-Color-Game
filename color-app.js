@@ -37,13 +37,13 @@ function setupSquares(){
 			var clickedColor = this.style.background;
 			//compare color to pickedColor
 			if(clickedColor === pickedColor){
-				messageDisplay.textContent = "Correct!";
+				messageDisplay.textContent = "CORRECT!";
 				resetButton.textContent = "Play Again?"
 				changeColors(clickedColor);
 				h1.style.background = clickedColor;
 			} else {
 				this.style.background = "#232323";
-				messageDisplay.textContent = "Try Again"
+				messageDisplay.textContent = "TRY AGAIN"
 			}
 		});
 	}
@@ -109,4 +109,3 @@ function randomColor(){
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
